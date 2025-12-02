@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import AuthenticationHub from "./pages/AuthenticationHub";
 import Login from "./pages/Login";
 function App() {
   const [theme, setTheme] = useState("light")
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="bg-neutral-200 dark:bg-neutral-700 dark:text-white h-screen">
    
-      <Login/>
+      <AuthenticationHub />
 
       <button onClick={toggleTheme} className="text-red-500 cursor-pointer">
         {theme ? <MdLightMode/> : <MdDarkMode/>}
