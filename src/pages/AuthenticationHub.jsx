@@ -1,18 +1,25 @@
 import React from 'react'
 import bg from '../assets/imgs/jim.jpg'
 import Login from './Login'
+import Signin from './Signin'
 
 const AuthenticationHub = () => {
   return (
     <section 
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover',   backgroundPosition: 'center' }}
-        className="h-screen flex place-items-center justify-center z-0">
-    
-        {/* overlay div for background  */}
-        <div className='absolute inset-0 backdrop-blur-sm z-1'></div>
+        style={{ 
+            backgroundImage: `url(${bg})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center' 
+        }}
+        className="relative h-screen w-screen flex justify-center items-center"
+    >
+        {/* Background blur overlay */}
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
 
-        (/*LogIn - Sign Up*/)
-        <Login/>
+        {/* Login form */}
+        <div className="relative z-10">
+            <Login />
+        </div>
     </section>
   )
 }

@@ -8,7 +8,7 @@ import Paragraph from '../components/forms/Paragraph'
 const Login = () => {
   return (
     <form action=""
-     className='flex flex-col gap-3 px-10 py-5 bg-white dark:bg-neutral-700 rounded-xl shadow-xl w-[40%] z-2'>
+     className='flex flex-col gap-3 px-10 py-5 bg-white dark:bg-neutral-700 rounded-xl shadow-xl '>
         <Title text={"Log In"}/>
         <Input id={"email"}/>
         <Input id={"password"}/>

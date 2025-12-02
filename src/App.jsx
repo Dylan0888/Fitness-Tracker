@@ -18,10 +18,10 @@ function App() {
     <div className="bg-neutral-200 dark:bg-neutral-700 dark:text-white h-screen">
    
       <AuthenticationHub />
-
+{/* 
       <button onClick={toggleTheme} className="text-red-500 cursor-pointer">
         {theme ? <MdLightMode/> : <MdDarkMode/>}
-      </button>
+      </button> */}
 
 
 
